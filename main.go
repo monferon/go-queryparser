@@ -17,7 +17,7 @@ type test interface{}
 
 func ReadConfig() (*config, error){
 	var C config
-	var T test
+	// var T test
 	viper.SetConfigName("config")
 	viper.SetConfigType("json")
 	viper.AddConfigPath(".")
