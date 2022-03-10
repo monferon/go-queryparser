@@ -26,11 +26,13 @@ func ReadConfig() (*config, error){
 		return nil, err
 	}
 
-	err = viper.Unmarshal(&T)
+	err = viper.Unmarshal(&C)
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println(T)
+	fmt.Println(C)
+	// fmt.Println(T["port"])
+
 	return &C, nil
 
 }
